@@ -12,7 +12,7 @@ Corporate site of **Virexa AI Technologies s.r.o.**, the parent company of CasTe
 ## Stack
 
 - **One self-contained `index.html`** (inline CSS and JS). No framework, no build, no npm. Do not introduce one.
-- The workflow uploads the **whole repo root** to GitHub Pages, so every file here is public (including this one). Never commit secrets or drafts.
+- The workflow publishes tracked files except `*.md`, `.github/`, `tools/`, `scripts/` and Python files, so this file and README stay off the live site. The repo itself is public on GitHub: never commit secrets or drafts.
 - `CNAME` (virexa-tech.com) and `.nojekyll`: do not touch.
 - Font: **Inter**, self-hosted in `assets/fonts/`. This is the reference font for all brand sites (castecheq, castechled, castechai). No other fonts.
 - `index.html` already contains three large base64 PNGs (~680 KB file). Put new images in `assets/` as `.webp` and link them; do not inline more base64.
